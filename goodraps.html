@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GoodRaps</title>
+  <meta charset="UTF-8">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<style type="text/css">
+
+		body{
+			overflow-x: hidden;
+			background-color: #131313;
+		}
+		.container-fluid{
+    	margin-top: 0;
+    	margin-bottom: 0;
+        padding-left: 0px; 
+        padding-right: 0px; 
+
+
+		}
+
+
+		.bg-img {
+		  /* The image used */
+		  background-image: url("images/cover.jpg");
+    	  min-height: 100vh;
+		  /* Center and scale the image nicely */
+		  background-position: center;
+		  background-repeat: no-repeat;
+		  background-size: cover;
+		  overflow-x: hidden;
+		  /* Needed to position the navbar */
+		  position: relative;
+		}
+
+		.header-line{
+			margin-top: 0; 
+    		margin-bottom: 0;
+            border-top: 5px solid #cb0000;
+		
+		}
+
+		/* The navbar */
+		.top-nav {
+		  overflow: hidden;
+		}
+
+		/* Navbar links */
+		.top-nav a {
+		  float: left;
+		  color: #f2f2f2;
+		  text-align: center;
+		  padding: 14px 16px;
+		  text-decoration: none;
+		  font-size: 17px;
+		}
+
+		.top-nav a:hover {
+		  background-color: #ddd;
+		  color: black;
+		}
+		
+		.goodraps{
+			font-size: 5vw;
+			color:#ffffff;
+    		text-decoration: underline;
+    		position: relative;
+    		top: 2vh;
+
+
+		}
+		.net{
+
+			font-size: 5vw;
+			color:#ffffff;
+			position: relative;
+			top:-1.7vw;			
+			left:-.5vw;			
+			width:80%;
+    		text-align:right;
+		
+		}
+		.title{
+		 height: 50vh;
+		 width: 30vw;
+
+		}
+
+		.middle-nav-wrapper{
+			background-color: #ffffff;
+		} 
+		.middle-nav{
+		  font-size: 17px;
+  		  text-align: center;
+  		      margin-bottom: 0;
+
+
+
+
+		}
+		.middle-nav li{
+			margin-right: 30px;
+
+
+
+		}
+
+
+		.middle-nav a{
+			color:black;
+    		text-decoration: none;
+			padding:1px 10px 2px 10px;
+		}
+
+		.current{
+			color:#ffffff !important;
+   			background-color: #cb0000;
+
+		}
+		
+		.middle-nav a:hover {
+			color:#ffffff;
+   			background-color: #cb0000;
+
+		}
+
+	
+		.trending-right-content{
+		  padding: 2vh 0 15vh 0;
+		  margin:20vh 2vw 7vh 0;
+ 		  background-color: #595959;
+
+		}
+		
+		.trending ul{
+		  list-style-type: none;
+		  padding-left: 0;
+		  padding-right: 3vw; 
+		
+
+		}
+
+		
+		.trending-header{
+			font-size: 5vw ;
+			letter-spacing:.6vw;
+			font-weight: bold;
+   			color: #cb0000;
+			max-width: 100%;
+		}
+
+		.trending-text {
+		  color: #f2f2f2;
+		  font-size: 2vw;
+		  font-weight: bold;
+
+
+		}
+
+		.trending-left-content{
+		  padding: 2vh 0 15vh 0;
+		  margin:20vh 0 7vh 0;
+		  background-color: #8b8b8b;
+		}
+
+
+		.news-title{
+			 color: #f2f2f2;
+		  font-size: 2vw;
+		}
+		.news-title {
+			border-bottom: 3px solid #cb0000;
+		}
+		.news-content{
+			margin-top: 4vw;
+			color: #ffffff;
+		}
+		
+		.news-right-content{}
+
+		.news-right-content span{
+			background-image: 
+		}
+		.news-image{
+			position: relative;
+			margin-top: 3vw;
+			max-width: 100%;
+		}
+		.news-image-text{
+			position: absolute;
+  			bottom: 0; 
+  			left: 4vh;
+  			width: 70%;
+  			font-size: 2vw;
+		}
+		.hip-hop-week{
+			margin-top: 3vw;
+		}
+		.non-stop-rap{
+			
+			/*background: linear-gradient(to top ,#f2f2f2, #595959, transparent), url("images/non-stop-rap.png") no-repeat center; */
+			background: -webkit-linear-gradient(top, rgba(19,19,19,1) 0%,rgba(255,255,255,0) 100%), -webkit-linear-gradient(bottom, rgba(19,19,19,1) 0%,rgba(255,255,255,0) 100%), url("images/non-stop-rap.png") no-repeat center;
+
+		  /*background-image: url("images/non-stop-rap.png");*/
+    	  min-height: 100vh;
+		  /* Center and scale the image nicely */
+		  background-position: center;
+		  background-repeat: no-repeat;
+		  background-size: cover;
+		  overflow-x: hidden;
+		}
+		.non-stop-rap-border{
+			border-bottom: 7px solid #cb0000; 
+			position: relative;
+
+		}
+
+		.non-stop-rap-text{
+
+			    position: relative;
+    			top: 3.5vw;
+    			font-size: 5vw;
+    			color: #ffffff;
+		}
+		.virtual-platform{
+			margin-top: 20vh;
+
+		}
+		.virtual-platform-text{
+		  color: #f2f2f2;
+		  font-size: 2vw;
+		}
+		.virtual-platform-text-ar{
+		  color: #f2f2f2;
+		  font-size: 2vw;
+		}
+		
+		.join-us-wrapper{
+						margin-top: 6vh;
+						color: #ffffff;
+
+
+		}
+		.join-us{
+			opacity: 1!important;
+			padding: 1vw 4vw;
+			font-size: 4vw;
+			background-color: rgba(255, 255, 255, 0.3);
+			border-radius: 25px;
+			color: #ffffff;
+		
+		}
+		.join-us-image{
+			max-width: 100%;
+			max-height: 100%;
+			width: 20vw;
+			position: relative;
+			bottom: 1.3vw;
+    		left: 9.5vw;
+
+		}
+		
+		.ranking-5{
+			border-top: 4px solid #cb0000; 
+			margin-top: 30vw;
+		}
+		.ranking-5 img{
+			max-width: 100%;
+			position: relative;
+			top: -6vw;
+			border-top:  4px solid #cb0000; 
+			border-bottom:  4px solid #cb0000; 
+
+		}
+		.rank-member{
+			padding: 0 0 ;
+		}
+		.ranking-5-text{
+			color:#ffffff ;
+			font-size: 3vw;
+		}
+</style>
+</head>
+<body>
+<div class="container-fluid">
+	<!-- first section -->
+			<div class="bg-img" >
+				<hr class="header-line">
+				<!-- nav bar -->
+				<div class="row justify-content-between">
+					<div class="col-4">
+					    <ul class="top-nav">
+					    	<li class="d-inline"><a  href="#donate">DONATE</a></li>
+					     	<li class="d-inline"><a  href="#shop">SHOP</a></li>
+					      	<li class="d-inline" ><a href="#contact">Contact US</a></li>
+					      	<li class="d-inline"><a href="#sign-in">SIGN IN</a></li>
+			  			</ul>
+		  			</div>
+		  			<!-- nav bar end -->
+		  			<!-- title image -->
+		  			<div class="col-4">
+		  				<img class="title img-responsive" src="images/title.png" alt="">
+					</div>
+					<!-- end of title -->
+				</div>
+			</div>
+<!-- second section -->
+	<div class="row middle-nav-wrapper justify-content-center">
+		<div class="col-10">
+			<ul class="middle-nav">
+			   	<li class="d-inline" ><a class="current" href="#home">HOME</a></li>
+			  	<li class="d-inline" ><a href="#news">NEWS</a></li>
+			  	<li class="d-inline" ><a href="#reviews">REVIEWS US</a></li>
+			 	<li class="d-inline" ><a href="#articles">ARTICLES</a></li>
+			 	<li class="d-inline" ><a href="#whats-good">WHATS GOOD</a></li>
+			 	<li class="d-inline" ><a href="#ranking">ranking</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- end of second seciton -->
+	<!-- third section -->
+	
+		<div class="trending">
+			<div class="row  justify-content-center ">
+				<div class="col-4 trending-left-content">
+				</div>
+				<div class="col-4 trending-right-content">
+					<ul>
+						<li class="text-right trending-header"><span >Trending</span></li>
+						<li class="text-right trending-text"><span >كيال يلتقي مبعوث الامم المتحدة</span></li>
+						<li class="text-right trending-text"><span >ديونو هيعتزل 2020</span></li>
+						<li class="text-right trending-text"><span> اصلاق منصة goodraps رسميا </span></li>
+					</ul>	
+				</div>
+			</div>
+
+		</div>
+	<!-- end of third section -->
+<!-- start of news section -->
+	<div class="news">
+		<div class="row justify-content-center">
+			<div class="news-title col-10 text-right">
+				<span>NEWS</span>
+			</div>	
+		</div>
+		<div class="news-content row justify-content-center ">
+				<div class="col-4 news-left-content">
+					<div class="row">
+						<div class="col-12 hip-hop-week">
+							<span>Hip Hop week in review: 2020 Grammy nominations &Lil reese shooting aftermath</span>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12 hip-hop-week">
+							<span>Hip Hop week in review: 2020 Grammy nominations &Lil reese shooting aftermath</span>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12 hip-hop-week">
+							<span>Hip Hop week in review: 2020 Grammy nominations &Lil reese shooting aftermath</span>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12 hip-hop-week">
+							<span>Hip Hop week in review: 2020 Grammy nominations &Lil reese shooting aftermath</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-4 news-right-content">
+					
+					<div class="row">
+						<div class="col-6 ">
+							<img class="news-image" src="images/news.png" alt="">
+							<span class="news-image-text image-responsive">كركشندي دبح صاحبه</span></div>
+						<div class="col-6 ">
+							<img class="news-image image-responsive" src="images/news.png" alt="">
+						
+							<span class="news-image-text">ابيوسف يزور مستشفي الأيتام</span>
+						</div>
+
+					</div>
+
+					<div class="row">
+						<div class="col-6 ">
+							<img class="news-image image-responsive" src="images/news.png" alt="">
+						
+							<span class="news-image-text" >اعتصام في مبني الجريك</span>
+						</div>
+						<div class="col-6 ">
+							<img class="news-image image-responsive" src="images/news.png" alt="">							
+							<span class="news-image-text">اعتصام في مبني الجريك</span>
+						</div>
+						
+					</div>
+					<div class="row">
+						<div class="col-6 ">
+							<img class="news-image image-responsive" src="images/news.png" alt="">
+
+							<span class="news-image-text">اعتصام في مبني الجريك</span>
+						</div>
+						<div class="col-6 ">
+							<img class="news-image image-responsive" src="images/news.png" alt="">
+
+							<span class="news-image-text">اعتصام في مبني الجريك</span>
+
+
+						</div>
+						
+					</div>
+				</div>	
+		</div>			
+		
+	</div>
+	<!-- end of news section -->
+	<br>
+	<br>
+	<br>
+
+	<!-- start of non stop rap section -->
+	<div class="non-stop-rap">
+		<div class="row justify-content-center">
+			<div class="col-6 non-stop-rap-border text-center" >
+				<span class="non-stop-rap-text">NON STOP RAP</span>
+			</div>
+		</div>
+		<div class="row justify-content-end">
+			<div class="col-8 virtual-platform text-center">
+				<span class="virtual-platform-text">
+					this virtual platform is only for rap music all around the arab world we shoyet kalam hytktb
+				</span>
+				
+			</div>
+			
+		</div>
+		<div class="row justify-content-end">
+			<div class="col-8 virtual-platform-ar text-center">
+				<span class="virtual-platform-text-ar ">
+					هذه المنصة الافتراضية مخصصة فقط لموسيقي الراب من حول العالم العربي وشوية كلام هيتم صياغته بطريقة شيك
+				</span>
+				
+			</div>
+			
+		</div>
+		<div class="row justify-content-end">
+			<div class="join-us-wrapper col-8  text-center">
+				<img class="join-us-image image-responsive" src="images/red-image.png" alt="">
+				<span class="join-us">JOIN US</span>
+				
+			</div>
+			
+		</div>
+	</div>
+	<!-- end of non stop rap section -->
+
+	<!-- start of ranking top 5 section -->
+	<div class="ranking-5">
+		<div class="row justify-content-center">
+			<div class="col-2 rank-member"><img class="image-responsive" src="images/1.jpg" alt=""></div>
+			<div class="col-2 rank-member"><img class="image-responsive" src="images/2.jpg" alt=""></div>
+			<div class="col-2 rank-member"><img class="image-responsive" src="images/3.jpg" alt=""></div>
+			<div class="col-2 rank-member"><img class="image-responsive" src="images/1.jpg" alt=""></div>
+		</div>
+		<div class="row justify-content-center ranking-5-text">
+			<div class="col-8 text-center"><span>أربع أشخاص سوف تحتاجهم اذا أردت اشعال المسرح</span></div>
+		</div>
+		<div class="row justify-content-center ranking-5-text">
+			<div class="col-8 text-center"><span>أخبار وحوادث مع نجوم شهر ديسمبر</span></div>
+		</div>
+	</div>
+	
+	<!-- end of ranking top 5 section -->
+</div>
+</body>
+</html>
